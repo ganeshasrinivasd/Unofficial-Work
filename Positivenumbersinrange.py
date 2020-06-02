@@ -1,5 +1,6 @@
 a=int(input("Enter the number of elements you want in the list: "))
 List=[]
+PList=[]
 i=1
 while(i<=a):
 	b=int(input())
@@ -8,4 +9,5 @@ while(i<=a):
 print('your list is\n ',List)
 for y in range(0,a):
 	if List[y]>0:
-		print(List[y])
+		PList.append(List[y])
+print("Positive numbers are: ",PList)
